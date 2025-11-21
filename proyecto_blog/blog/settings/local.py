@@ -15,12 +15,12 @@ ALLOWED_HOSTS = []
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
 DATABASES = {
-    'default': 
+    'default':
         {
             'ENGINE': 'django.db.backends.mysql',
             'NAME': 'blog_db',
             'USER': 'root',
-            'PASSWORD': '1234',
+            'PASSWORD': 'newpassword',
             'HOST': 'localhost',
             'PORT': '3306',
         }
