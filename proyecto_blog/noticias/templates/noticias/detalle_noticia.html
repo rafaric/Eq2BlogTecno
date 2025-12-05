@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %} Detalle Noticia {% endblock %}
+{% block content %}
+  <h1>{{noticia.titulo}}</h1>
+  <div class="flex justify-end w-100">
+
+    <img src="{{ noticia.imagen.url }}" alt="imagen de noticia" class="w-25 h-25"/>
+  </div>
+  <p class="text-primary">{{noticia.contenido}}</p>
+  <p class="text-muted">Publicado el: {{noticia.fecha_publicacion}}</p>
+  <small><strong>Categoria: </strong>{{noticia.categoria.nombre}}</small>
+  <div class="pt-5">
+
+    <a class="btn btn-danger">Eliminar</a>
+  </div>
+{% endblock %}
